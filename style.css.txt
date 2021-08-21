@@ -1,1 +1,5 @@
 inserindo novo style com master 
+*{
+  display:0;
+  font-size: 18px;
+}
