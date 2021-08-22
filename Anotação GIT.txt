@@ -1,0 +1,75 @@
+1 - FACILIDADE PARA VOLTAR VERSÃO ANTERIOR
+2 - VARIAS PESSOAS PODEM USAR O MESMO CÓDIGO MOSTRANDO LINHA A LINHA O QUE FOI ALTERADO 
+
+-- comandos
+CONFIGURACAO
+git --version (ver a versão do meu git)
+git config --global user.name 'seu_nome'  (definir o nome do usuario)
+git config --global user.email 'seu_email (seu email)
+git config --global core.editor vscode  (definir o nome do seu editor de codigo)
+git config user.email (ver o email configurado)
+git config user.name  (ver o nome configurado)
+git config --list  (ver tudo que esta cadastrado)
+git push origin :(nome do branch) -- apaga o branch salvo no github
+git branch -D (nome do branch) -- apagar o branch local
+git pull origin (nome do branch) -- puxa as atualizações feitas no github para maquina local 
+
+
+COMANDOS PARA PASTA 
+cd Desktop/ --
+cd nome_pasta --
+dir -- para ver o que tem dentro da pasta
+tree /f  -- mostra os documentos que tem na sua pasta (obs nunca fazer esse comando quando esta somente mostrando a pasta do seu HD
+mkdir - criar pasta 
+
+COMANDOS GIT
+git add -A  (adicionar todos os arquivos para serem comitados)
+git status  (mostra todos os arquivos como esta) 
+git log (verificar o que foi alterado)
+git remote add origin https://github.com/fmarques84/aulagit.git -- para adicionar ao seu reposito em nuvem
+git remote - para ver o que foi adicionado
+git remote -v
+-- (fech) -- a capacidade de puxar 
+-- (push) -- levar do meu local para o remoto 
+
+.gitignore (voce cria um arquivo txt e coloca dentro dela os arquivos que não queira que seja enviados para o github)
+
+git revert --no-edit+"codigo do log" -- ira retornar a ultima alteração realizada 
+
+= clonar github
+Primeiro no github realize o fork
+abra o gitbash ou terminal e localize a pasta 
+faça o comando git clone https:"nome do endereço da pasta criada no seu github"
+
+= para salva alteração de fork
+abra a pasta criada 
+realizer o git add
+realize  o git commit 
+verifique o branch que se encontra 
+e após faça o git push origin "nome do branch"
+
+= para enviar o pull request
+no github localize a opção pull request
+vá em new pull request
+verifique se seu github esta na opção head
+insira as observações 
+e apos aperte creat pull request 
+
+
+
+=revertendo modificações
+git reset --soft (vai voltar o ultimo e deixar preparo o commit com as alterações do anterior porem nao comitadas  - voltar antes do commit)
+git reset --mixed (a mesma coisa porem não vai ficar preparo para comiitar e vai ter que realizar o comando add)
+git reset -- hard (vai ignorar tudo e voltar todos os arquivos para o ultimo commit)
+
+branch
+git branch (comando para verificar qual branch esta as alterações)
+git branch novo_nome (voce cria um novo branch)
+git commit -am "seu_texto_aqui" (realiza a alteração e executa o commit)
+git checkout nome_branch (vocÊ altera o nome do branch que vai utilizar)
+
+visualizar as alterações feitas no terminal
+git diff (mostra a linha do tempo que houve exclusão, modificação do arquivo)
+git diff --name-only (mostra o nome do arquivo quer foi modifiacado)
+git checkout HEAD -- nome_do_arquivo -- para retornar a alteração realizada antes de fazer o commit 
+git
